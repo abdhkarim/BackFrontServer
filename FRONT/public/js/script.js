@@ -1,4 +1,4 @@
-var url = new URL("http://localhost:3001/api/clients");
+var url = new URL("http://localhost:3001/ProjetMDL/FRONT"); 
 
 function create_tab(){
   //set timeout pour attendre que le serveur soit lancé

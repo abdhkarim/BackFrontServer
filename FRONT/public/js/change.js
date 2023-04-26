@@ -1,4 +1,4 @@
-var url = new URL("http://localhost:3001/api/clients");
+var url = new URL("http://localhost:3001/ProjetMDL/FRONT"); 
 
 document.addEventListener("DOMContentLoaded", function () {
     const id = document.getElementById("id");

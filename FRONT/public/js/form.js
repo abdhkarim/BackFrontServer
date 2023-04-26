@@ -1,4 +1,4 @@
-var url = new URL("http://localhost:3001/api/clients");
+var url = new URL("http://localhost:3001/ProjetMDL/FRONT"); 
 
 function handleSubmit() {
     //on recupere l'id du dernier client
