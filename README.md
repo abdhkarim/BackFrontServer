@@ -7,6 +7,7 @@ Concernant le projet de Frontend Il doit comporter des écrans permettant de :
     Supprimer un client 
     Voir les statistiques de la base de client Exemple : la répartition par pays ou société en représentation graphique(bonus) 
 
+ed
 Le projet FrontEnd comporte un serveur web qui permet de lancer l'application web. La partie écran peut être développée en javascript JQuery L'application Front End appelle directement le projet BackEnd pour en récupérer et envoyer les données.
 
 
