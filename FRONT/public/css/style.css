@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 *,
 ::before,
@@ -54,7 +56,7 @@ body {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  border-bottom: 1px solid orangered;
+  border-bottom: 1px solid #ff7900;
 }
 .nav-bloc:hover {
   background: rgb(24, 24, 24);
@@ -106,7 +108,7 @@ body {
   transition: all 0.7s;
 }
 .sub-nav li:hover {
-  background-color: rgb(255, 153, 0);
+  background-color:#ff7900;
   color: #000;
   transition: all 0.7s;
 }
@@ -164,6 +166,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     background-color: #272727;
     color: #bebebe;
+    
 }
 
 .stable tr:nth-of-type(even) {
@@ -178,7 +181,7 @@ body {
 
 h1{
     text-align: center;
-    color: orangered;
+    color: #ff7900;
     margin: 50px;
 }
 
@@ -194,19 +197,20 @@ h1{
     background-color: #161616;
     color: #ffffff;
     text-align: center;
+    
 }
 
 .stable th,
 .stable td {
     padding: 12px 15px;
     margin-bottom: 30px;
+    
 }
 
 .stable tr {
     border-bottom: 1px solid #dddddd;
     margin-bottom: 30px;
 }
-
 
 
 .stable tr:last-of-type {
@@ -219,35 +223,36 @@ div#add{
     left: 85%;
 }
 
-.button1 {
-  position: relative;
-  left: 88%;
-  background-color: #000000;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  flex-shrink: 0;
-  font-size: 16px;
-  font-weight: 500;
-  height: 4rem;
-  padding: 0 1.6rem;
-  text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-  transition: all .5s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-bottom: 2rem;
-  transform: translate(-50%, -50%);
-}
-
-.button-36:hover {
-  box-shadow: #657507 0 1px 30px;
-  transition-duration: .1s;
-}
 
 #mon-lien {
     margin-top: 110px;
  }
+
+ #nbelt {
+    border-radius: 20px;
+ }
+ #nbelt:hover {
+    border-radius: 20px;
+    background-color: #222;
+    color: #bebebe;
+    transition: all 0.5s ease-in-out;
+ }
+ 
+ 
+span {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1em;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(rgb(66, 65, 55), rgb(126, 126, 126));
+  background-size: 100% 10px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+   transition: background-size .7s, background-position .5s ease-in-out;
+}
+
+span:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position .7s, background-size .5s ease-in-out;
+}

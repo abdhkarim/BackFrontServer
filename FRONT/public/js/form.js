@@ -2,7 +2,7 @@ var url = new URL("http://localhost:3001/api/AddCustomers");
 
 function handleSubmit() {
     //on recupere l'id du dernier client
-    let idMax = BigInt(99999);
+    let idMax;
     $.ajax({
         url: url,
         async: false,
