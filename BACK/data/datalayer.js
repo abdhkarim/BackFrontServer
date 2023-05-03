@@ -1,4 +1,4 @@
-const file = "./data/users.json"; // Chemin du fichier JSON contenant les données des clients
+const file = "./data/customers.json"; // Chemin du fichier JSON contenant les données des clients
 const fs = require('fs'); // Module pour la lecture et l'écriture de fichiers
 
 let data = {

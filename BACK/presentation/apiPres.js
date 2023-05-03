@@ -37,11 +37,13 @@ const apiServ = {
             res.status(200).send(message);
         })
         
+        // Modifie un client
         app.put('/api/UpdateCustomers', (req, res) => {
             let message = business.updateUser(req.body);
             res.status(200).send(message);
         })
 
+        // Supprime un client
         app.delete('/api/DeleteCustomers', (req, res) => {
             const clientid = req.query.id;
             let message = business.removeUser(clientid);
