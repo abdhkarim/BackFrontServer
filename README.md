@@ -15,7 +15,8 @@ Un projet BackEnd : Il expose une API permettant de :
     Ajouter un client 
     Modifier un client 
     Supprimer un client 
-    (bonus) récupérer les statistiques Il est possible de faire les mêmes actions en ligne de commande 
+    (bonus) récupérer les statistiques 
+    Il est possible de faire les mêmes actions en ligne de commande 
     Au démarrage de l'application, on peut choisir en passant en paramètre un stockage en fichier ou en BDD (en utilisant https://cloud.mongodb.com/ par exemple).
 
 Le projet BackEnd doit être structuré avec un découpage logique tel que étudié en cours. Les 2 projets doivent utiliser eslint, avec un fichier package.json pour pouvoir installer les dépendances.
