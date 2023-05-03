@@ -39,15 +39,20 @@ let data = {
     // Met à jour les données d'un utilisateur dans le fichier JSON
     updateUser : function(user){
         const data = fs.readFileSync(file); // Lit le contenu du fichier JSON
+
         const clients = JSON.parse(data); // Parse le contenu JSON en un tableau JavaScript
+
         const objectid = clients.findIndex(obj => obj.id === user.id); // Trouve l'objet utilisateur dans le tableau
+
         if (objectid !== -1) { // Si l'objet existe
             const updatedObject = { ...clients[objectid], ...user }; // Met à jour les propriétés de l'objet avec les nouvelles données
             clients[objectid] = updatedObject; // Met à jour le tableau avec le nouvel objet mis à jour
             const updatedData = JSON.stringify(clients, null, 2); // Transforme le tableau JavaScript en JSON avec une indentation de 2 espaces
             fs.writeFileSync(file, updatedData); // Écrit le nouveau contenu dans le fichier JSON
             return 1; // Retourne 1 pour indiquer que la mise à jour a réussi
-        } else {
+        } 
+        
+        else {
             return 0; // Retourne 0 pour indiquer que la mise à jour a échoué car l'utilisateur n'a pas été trouvé
         }
     },
@@ -55,21 +60,30 @@ let data = {
 
 // Cette fonction permet de supprimer un utilisateur à partir de son identifiant
     removeUser : function(removeuser){
+
         // Nous ouvrons le fichier contenant les données des utilisateurs
         const rawdata = fs.readFileSync(file);
+
         // Nous convertissons les données en objet JSON pour pouvoir les manipuler
         let newclients = JSON.parse(rawdata);
+
         // Nous recherchons l'identifiant de l'utilisateur à supprimer dans notre objet clients
         const id = newclients.findIndex(user => user.id === parseInt(removeuser));
+
+
     // Si l'utilisateur existe dans notre objet clients
     if (id != -1) {
+
         // Nous supprimons l'utilisateur de notre objet clients
         newclients.splice(id, 1);
+
         // Nous écrasons le fichier avec la nouvelle liste d'utilisateurs mise à jour
         fs.writeFileSync(file, JSON.stringify(newclients, null, 2));
+
         // Nous renvoyons la valeur 1 pour signaler que la suppression a été effectuée avec succès
         return 1;
     } else
+
     // Nous renvoyons la valeur 0 pour signaler que la suppression n'a pas été effectuée car l'utilisateur n'existe pas
         return 0;
     }

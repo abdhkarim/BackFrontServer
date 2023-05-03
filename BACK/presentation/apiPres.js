@@ -12,7 +12,7 @@ const apiServ = {
         
         app.use(cors()); 
         
-        app.get('/ProjetMDL/FRONT/all', (req,res) => {   
+        app.get('/api/customers', (req,res) => {   
             
             const clients = business.getAllClients();
 
@@ -21,7 +21,7 @@ const apiServ = {
         })
 
         //req reprend les donnees fournies par la requete
-        app.get('/ProjetMDL/FRONT/all', (req,res) => {   
+        app.get('/api/customers', (req,res) => {   
             
             const number = req.query.number;
             const page = req.query.page;
@@ -32,17 +32,17 @@ const apiServ = {
         })
 
         //ajoute un user
-        app.post('/ProjetMDL/FRONT/all', (req, res) => {
+        app.post('/api/AddCustomers', (req, res) => {
             let message = business.addUser(req.body);
             res.status(200).send(message);
         })
         
-        app.put('/ProjetMDL/FRONT', (req, res) => {
+        app.put('/api/UpdateCustomers', (req, res) => {
             let message = business.updateUser(req.body);
             res.status(200).send(message);
         })
 
-        app.delete('/ProjetMDL/FRONT', (req, res) => {
+        app.delete('/api/DeleteCustomers', (req, res) => {
             const clientid = req.query.id;
             let message = business.removeUser(clientid);
             res.status(200).send(message);
