@@ -1,8 +1,8 @@
-var url = new URL("http://localhost:3001/ProjetMDL/FRONT"); 
+var url = new URL("http://localhost:3001/api/AddCustomers"); 
 
 function handleSubmit() {
     //on recupere l'id du dernier client
-    let idMax;
+    let idMax = BigInt(99999);
     $.ajax({
         url: url,
         async: false,

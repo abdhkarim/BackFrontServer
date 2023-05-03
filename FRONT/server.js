@@ -8,5 +8,5 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 
 //lance l'ecoute
 app.listen(port, () => {
-    console.log(`App listening on port ${port}`)
+    console.log(`Serveur du Front lancé sur le port ${port}`)
 }) 

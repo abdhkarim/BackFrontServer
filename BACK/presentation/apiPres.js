@@ -12,7 +12,7 @@ const apiServ = {
         
         app.use(cors()); 
         
-        app.get('/api/customers', (req,res) => {   
+        app.get('/api/Allcustomers', (req,res) => {   
             
             const clients = business.getAllClients();
 
@@ -52,7 +52,7 @@ const apiServ = {
         
         //lance l'ecoute
         app.listen(port, () => {
-            console.log(`App listening on port ${port}`)
+            console.log(`Serveur du Back lancé sur le port ${port}`)
         }) 
     }
 
