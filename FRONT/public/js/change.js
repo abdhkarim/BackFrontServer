@@ -42,7 +42,6 @@ function handleSubmit() {
         contentType: "application/json",
         data: JSON.stringify(client),
         success: function (response){
-            console.log("eeeeee");
             alert(response.message);
         }
     });
