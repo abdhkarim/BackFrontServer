@@ -1,4 +1,4 @@
-var url = new URL("http://localhost:3001/ProjetMDL/FRONT"); 
+var url = new URL("http://localhost:3001/api/DeleteCustomers"); 
 
 function getTotalClients() {
     //on recupere le nombre de clients
