@@ -178,7 +178,8 @@ body {
 
 h1{
     text-align: center;
-    color: #dac50d;
+    color: orangered;
+    margin: 50px;
 }
 
 .page-link {
@@ -190,24 +191,27 @@ h1{
 }
 
 .stable th {
-    background-color: #161616;;
+    background-color: #161616;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
 }
 
 .stable th,
 .stable td {
     padding: 12px 15px;
+    margin-bottom: 30px;
 }
 
 .stable tr {
     border-bottom: 1px solid #dddddd;
+    margin-bottom: 30px;
 }
 
 
 
 .stable tr:last-of-type {
-    border-bottom: 2px solid #000000;
+    border-bottom: 30px solid #acacac;
+    
 }
 
 div#add{
