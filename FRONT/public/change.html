@@ -124,6 +124,8 @@
         <h1>Modifier un client</h1>  
     </main>
 
+  <p style="text-align: center;"> Vous avez mal créé le dossier d'un de nos client ? C'est pas grave vous pouvez le modifier ! <br> ATTENTION à bien remplir tous les champs de façon convenable, de sorte à ne pas (encore) effectuer de modification</p>
+
     <div class="d-flex justify-content-center">
     <form style="width:30rem; position:relative; top:2rem;">
       <div class="col">
@@ -167,13 +169,16 @@
       <br>
       <div class="row">
         <div class="col-sm-12">
-          <button type="button" style="background-color: #b96666;" class="btn btn-secondary"
-          onclick="window.location.href = '/list.html';">Liste des clients</button>
-            <button style="background-color: forestgreen; position: absolute; right:0;" type="submit" class="btn btn-primary">Modifier</button>
+          <button type="reset" style="background-color: #b96666;"  class="btn btn-secondary">Tout effacer</button>
+          <button style="background-color: forestgreen; position: absolute; right:0;" type="submit"
+        class="btn btn-primary">Valider</button>
          </div>
+         
       </div>
     </form>
     </div> 
+
+    <img src="image/eraserr.png" id="eraser" alt="">
     
     <script>
       const form = document.querySelector('form');

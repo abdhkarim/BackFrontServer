@@ -256,3 +256,49 @@ span:hover {
   background-position: 0% 100%;
   transition: background-position .7s, background-size .5s ease-in-out;
 }
+
+.d-flex {
+  justify-content: center;
+  border: 20px solid #ccc; /* bordure solide de couleur grise */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* ombre portée noire et légèrement floue */
+  width: 500px; /* définit une largeur spécifique de 500 pixels */
+  margin: 0 auto; /* centre le formulaire horizontalement */
+  border-radius: 20px; /* arrondit les coins avec un rayon de 10 pixels */
+}
+
+.d-flex form {
+  padding-bottom: 50px;
+   position:relative; 
+   top:2rem;
+}
+
+#handshake 
+{
+  position: absolute; /* positionne l'image par rapport au conteneur */
+  bottom: 0px; /* positionne l'image 10 pixels depuis le bas */
+  right: 20px; /* positionne l'image 10 pixels depuis la droite */
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+#eraser 
+{
+  position: absolute; /* positionne l'image par rapport au conteneur */
+  bottom: 220px; /* positionne l'image 10 pixels depuis le bas */
+  right: 20px; /* positionne l'image 10 pixels depuis la droite */
+  object-fit: cover;
+  width: 400px; /* définit la largeur de l'image à 200 pixels */
+  height: auto; /* définit la hauteur de l'image proportionnellement à la largeur */
+  opacity: 0.5;
+}
+
+#disagree {
+  position: absolute; /* positionne l'image par rapport au conteneur */
+  bottom: 0px; /* positionne l'image 10 pixels depuis le bas */
+  top: 350px; /* positionne l'image 10 pixels depuis le bas */
+  left: 900px; /* positionne l'image 10 pixels depuis la droite */
+  width: 300px;
+  object-fit: cover;
+  opacity: 0.5;
+
+}
