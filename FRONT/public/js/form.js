@@ -1,4 +1,4 @@
-var url = new URL("http://localhost:3001/api/AddCustomers"); 
+var url = new URL("http://localhost:3001/api/customers"); 
 
 function handleSubmit() {
     //on recupere l'id du dernier client
@@ -13,7 +13,7 @@ function handleSubmit() {
 
     //on cree un objet client avec les valeurs du formulaire
     let client = {
-        id: idMax + 1,
+        id: idMax + 2,
         email: document.getElementById("email").value,
         first: document.getElementById("name").value,
         last: document.getElementById("name2").value,

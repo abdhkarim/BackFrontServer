@@ -32,7 +32,7 @@ const apiServ = {
         })
 
         //ajoute un user
-        app.post('/api/AddCustomers', (req, res) => {
+        app.post('/api/customers', (req, res) => {
             let message = business.addUser(req.body);
             res.status(200).send(message);
         })
