@@ -1,4 +1,7 @@
-Nom : ABDALLAH Karim 
+Nom : ABDALLAH Karim
+                 ____________________
+                 |  I - Consigne   |
+                 ____________________
 
 Concernant le projet de Frontend Il doit comporter des écrans permettant de : 
     Consulter la liste des clients 
@@ -25,3 +28,29 @@ Le projet BackEnd doit être structuré avec un découpage logique tel que étud
 Chaque projet doit être sur github, avec une explication dans le Readme pour en expliquer le déploiement. (merci d'en faire le test avant pour vous assurer du bon fonctionnement). Les liens doivent être mis dans le fichier suivant : Et les droits en accès doivent être donné à manoel.deligny@gmail.com Le git ne doit pas comporter les librairies utilisées dans le projet. Le git doit comporter l’historique des push et commits pour voir l’évolution de vos applications.
 
 Le contrôle des champs doit être fait autant dans le FrontEnd que dans l'API du BackEnd.
+
+________________________________________________________
+
+                _______________________________
+                 |  II - Tuto et explication  |
+                 ______________________________
+
+Pour que cela fonctionne je vous fait un tutoriel :
+
+    1 - Munissez vous de mon code 
+    2 - Ouvrez deux terminaux afin de lancer les 2 serveurs 
+        a) Pour lancer le serveur du front : 
+            -> cd FRONT
+            -> node server.js
+                    SERVEUR LANCE
+        
+        b) Pour lancer le serveur du back :
+            -> cd BACK
+            -> node script.js
+                    SERVEUR LANCE
+
+    3 - Les 2 serveurs étant lancés sur les ports 3000 et 3001 de votre machine, faites sur la barre de recherche de votre navigateur : localhost:3000
+    4 - Vous tomberez alors sur l'index.html
+
+ENJOY !
+______________________________________________________
