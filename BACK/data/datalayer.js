@@ -9,6 +9,12 @@ let data = {
         return clients; // Retourne le tableau de clients
     },
 
+    getmaxid(){
+        const rawdata = fs.readFileSync(file); // Lit le contenu du fichier JSON
+        let clients = JSON.parse(rawdata);
+        let id = clients[clients.length-1].id
+        return id;
+    },
     // Récupère un certain nombre de clients à partir d'une page donnée
     getClients : function(number, page){
         const rawdata = fs.readFileSync(file); // Lit le contenu du fichier JSON
@@ -20,8 +26,11 @@ let data = {
         }
         clients = {
             total : total,
-            clients : clients
+            clients : clients,
+            id : this.getmaxid(),
+            
         };
+
         return clients; // Retourne un objet contenant le nombre total de clients et le tableau de clients à afficher
     },
 

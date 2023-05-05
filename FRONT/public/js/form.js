@@ -7,13 +7,13 @@ function handleSubmit() {
         url: url,
         async: false,
         success: function (data) {
-            idMax = data.total;
+            idMax = data.id;
         }
     });
 
     //on cree un objet client avec les valeurs du formulaire
     let client = {
-        id: idMax + 2,
+        id: idMax + 1,
         email: document.getElementById("email").value,
         first: document.getElementById("name").value,
         last: document.getElementById("name2").value,
