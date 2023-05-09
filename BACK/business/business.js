@@ -1,5 +1,5 @@
 // Importation du module dataLayer
-const data = require('../data/dataLayer');
+const data = require("../data/dataLayer");
 
 // Définition de constantes pour les valeurs par défaut et limites de pagination
 const defaultNumber = 10;
